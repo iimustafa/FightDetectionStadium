@@ -1,0 +1,73 @@
+/* Custom styles for Stadium Fight Detection System */
+
+/* Video player styling */
+.video-js {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Timeline styling */
+.timeline-container {
+    margin: 20px 0;
+}
+
+.timeline {
+    height: 30px;
+    background-color: #2c3034;
+    border-radius: 4px;
+    display: flex;
+    overflow: hidden;
+}
+
+.timeline-segment {
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.timeline-segment.normal {
+    background-color: #198754;
+}
+
+.timeline-segment.fight {
+    background-color: #dc3545;
+}
+
+.timeline-segment:hover {
+    filter: brightness(1.2);
+}
+
+.timeline-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    color: #adb5bd;
+    font-size: 0.8rem;
+}
+
+/* Incident item styling */
+.incident-item {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.incident-item:hover {
+    background-color: #f8d7da;
+}
+
+/* Report styling */
+#report-content {
+    white-space: pre-line;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .timeline {
+        height: 20px;
+    }
+    
+    .timeline-labels {
+        font-size: 0.7rem;
+    }
+}
